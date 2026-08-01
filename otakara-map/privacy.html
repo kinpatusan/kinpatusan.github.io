@@ -1,62 +1,114 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>プライバシーポリシー | お宝マップ</title>
+<title>お宝マップ — Privacy policy</title>
+<link rel="alternate" hreflang="ja" href="https://kinpatusan.github.io/otakara-map/ja/privacy.html">
+<link rel="alternate" hreflang="en" href="https://kinpatusan.github.io/otakara-map/en/privacy.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://kinpatusan.github.io/otakara-map/zh-Hans/privacy.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://kinpatusan.github.io/otakara-map/zh-Hant/privacy.html">
+<link rel="alternate" hreflang="ko" href="https://kinpatusan.github.io/otakara-map/ko/privacy.html">
+<link rel="alternate" hreflang="es" href="https://kinpatusan.github.io/otakara-map/es/privacy.html">
+<link rel="alternate" hreflang="fr" href="https://kinpatusan.github.io/otakara-map/fr/privacy.html">
+<link rel="alternate" hreflang="de" href="https://kinpatusan.github.io/otakara-map/de/privacy.html">
+<link rel="alternate" hreflang="it" href="https://kinpatusan.github.io/otakara-map/it/privacy.html">
+<link rel="alternate" hreflang="pt-BR" href="https://kinpatusan.github.io/otakara-map/pt-BR/privacy.html">
 <style>
-  :root { color-scheme: light dark; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif;
-    line-height: 1.9; max-width: 720px; margin: 0 auto; padding: 24px 20px 64px;
-    color: #1c1c1e; background: #fff;
-  }
-  @media (prefers-color-scheme: dark) {
-    body { color: #e5e5ea; background: #1c1c1e; }
-    a { color: #6db2ff; }
-  }
-  h1 { font-size: 1.5rem; border-bottom: 2px solid #c8a34a; padding-bottom: .5rem; }
-  h2 { font-size: 1.1rem; margin-top: 2.2rem; border-left: 4px solid #c8a34a; padding-left: .6rem; }
-  .updated { color: #8e8e93; font-size: .85rem; }
-  .strong { font-weight: 700; }
+:root{
+  --gold:#c8a34a; --gold-soft:#e6d3a3;
+  --ink:#1b1b1f; --sub:#6b6b73; --line:#e6e6ea;
+  --bg:#fbfaf7; --card:#fff; --accent:#7c6bd6;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --ink:#ececf1; --sub:#a0a0a8; --line:#33333a;
+         --bg:#141416; --card:#1d1d21; --gold:#d9b968; --gold-soft:#e6d3a3; }
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",
+    "Segoe UI",system-ui,sans-serif;
+  line-height:1.85; -webkit-text-size-adjust:100%;
+}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px 72px}
+header.site{
+  background:linear-gradient(160deg,#2b2620 0%,#3d3527 55%,#241f1a 100%);
+  color:#fff; padding:34px 0 30px; margin-bottom:34px;
+}
+header.site .wrap{padding-bottom:0}
+.brand{display:flex;align-items:center;gap:14px}
+.brand .mark{
+  width:52px;height:52px;border-radius:13px;flex:none;display:block;
+  box-shadow:0 3px 12px rgba(0,0,0,.4);
+}
+.brand h1{font-size:1.28rem;margin:0;letter-spacing:.01em}
+.brand p{margin:2px 0 0;color:var(--gold-soft);font-size:.85rem}
+nav.site{margin-top:22px;display:flex;gap:8px;flex-wrap:wrap}
+nav.site a{
+  color:#fff;text-decoration:none;font-size:.86rem;
+  padding:7px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.28);
+}
+nav.site a.on{background:var(--gold);border-color:var(--gold);color:#241f1a;font-weight:700}
+h2{
+  font-size:1.06rem;margin:2.4rem 0 .8rem;padding-left:.65rem;
+  border-left:4px solid var(--gold);line-height:1.5;
+}
+p{margin:.7rem 0}
+.lead{color:var(--sub);font-size:.97rem}
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:14px;
+  padding:4px 20px;margin:1rem 0;
+}
+ul{padding-left:1.2rem;margin:.6rem 0}
+li{margin:.35rem 0}
+a{color:#8a6fd8}
+.faq dt{font-weight:700;margin-top:1.3rem}
+.faq dd{margin:.3rem 0 0;color:var(--sub)}
+.mail{
+  display:inline-block;margin:.3rem 0 .6rem;padding:11px 18px;border-radius:10px;
+  background:var(--gold);color:#241f1a;font-weight:700;text-decoration:none;
+}
+.langs{margin-top:2.6rem;padding-top:1.2rem;border-top:1px solid var(--line)}
+.langs .label{color:var(--sub);font-size:.8rem;margin-bottom:.5rem}
+.langs a{
+  display:inline-block;margin:0 .45rem .5rem 0;padding:5px 12px;
+  border:1px solid var(--line);border-radius:999px;font-size:.84rem;
+  text-decoration:none;color:var(--ink);background:var(--card);
+}
+.langs a.on{border-color:var(--gold);color:var(--gold);font-weight:700}
+footer.site{color:var(--sub);font-size:.8rem;margin-top:2.4rem;
+  padding-top:1.2rem;border-top:1px solid var(--line)}
+.hub{max-width:520px;margin:12vh auto;text-align:center;padding:0 20px}
+.hub .langs{border:0}
 </style>
+<script>
+(function(){
+  var supported = ["ja", "en", "zh-Hans", "zh-Hant", "ko", "es", "fr", "de", "it", "pt-BR"];
+  var want = (navigator.languages || [navigator.language || "en"]);
+  for (var i = 0; i < want.length; i++) {
+    var w = want[i];
+    for (var j = 0; j < supported.length; j++) {
+      if (w === supported[j] || w.split("-")[0] === supported[j].split("-")[0]) {
+        location.replace("./" + supported[j] + "/privacy.html"); return;
+      }
+    }
+  }
+  location.replace("./en/privacy.html");
+})();
+</script>
 </head>
 <body>
-<h1>「お宝マップ」プライバシーポリシー</h1>
-<p class="updated">最終更新日: 2026年8月1日</p>
-
-<p>「お宝マップ - 砂金・鉱物・化石の採集候補地」（以下「本アプリ」）は、利用者のプライバシーを尊重します。本ポリシーは、本アプリが扱う情報とその取り扱いについて説明するものです。</p>
-
-<h2>1. 収集する情報</h2>
-<p class="strong">本アプリは、利用者の個人情報を収集・送信しません。</p>
-<ul>
-  <li>アカウント登録はありません。</li>
-  <li>利用状況の分析（アナリティクス）や広告のためのデータ収集は行いません。</li>
-</ul>
-
-<h2>2. 位置情報について</h2>
-<p>本アプリは、現在地を地図上に表示する目的でのみ位置情報を使用します。位置情報は端末内でのみ処理され、外部のサーバーへ送信・保存されることはありません。位置情報の利用はいつでも端末の設定（設定 &gt; プライバシーとセキュリティ &gt; 位置情報サービス）から無効にできます。</p>
-
-<h2>3. 記録機能について</h2>
-<p>「行きたい」「行った」「見つけた」などの記録は、すべて利用者の端末内にのみ保存されます。開発者がこれらの記録にアクセスすることはありません。</p>
-
-<h2>4. アプリ内課金について</h2>
-<p>アプリ内課金は Apple の App Store を通じて処理されます。決済情報（クレジットカード番号など）を本アプリおよび開発者が受け取ることはありません。購入履歴の管理・返金は Apple のポリシーに従います。</p>
-
-<h2>5. 発見報告メールについて</h2>
-<p>「発見・訪問を報告する」機能は、利用者自身のメールアプリを起動するものです。送信するかどうか、および記載する内容は利用者の任意です。お送りいただいた内容は、収録データの検証・改善の目的にのみ使用します。</p>
-
-<h2>6. 外部サービスについて</h2>
-<p>地図の背景表示には Apple の MapKit を使用します。地図タイルの取得等におけるデータの取り扱いは <a href="https://www.apple.com/jp/privacy/">Apple のプライバシーポリシー</a>に従います。</p>
-
-<h2>7. お問い合わせ</h2>
-<p>本ポリシーに関するお問い合わせは、以下までお願いします。</p>
-<ul>
-  <li>メール: sharkteethfinder2025@gmail.com</li>
-  <li>note: <a href="https://note.com/kinpatusan">https://note.com/kinpatusan</a></li>
-</ul>
-
-<h2>8. 改定について</h2>
-<p>本ポリシーを改定する場合は、本ページを更新し、最終更新日を改めます。</p>
+<div class="hub">
+  <div class="brand" style="justify-content:center">
+    <img class="mark" src="./icon.png" alt="" width="52" height="52">
+    <div style="text-align:left">
+      <h1 style="font-size:1.2rem;margin:0">お宝マップ</h1>
+      <p style="margin:2px 0 0;color:var(--sub);font-size:.85rem">Privacy policy</p>
+    </div>
+  </div>
+  <div class="langs"><div class="label">Language / 言語</div><a href="./ja/privacy.html">日本語</a><a href="./en/privacy.html">English</a><a href="./zh-Hans/privacy.html">简体中文</a><a href="./zh-Hant/privacy.html">繁體中文</a><a href="./ko/privacy.html">한국어</a><a href="./es/privacy.html">Español</a><a href="./fr/privacy.html">Français</a><a href="./de/privacy.html">Deutsch</a><a href="./it/privacy.html">Italiano</a><a href="./pt-BR/privacy.html">Português</a></div>
+</div>
 </body>
 </html>
