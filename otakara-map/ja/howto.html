@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>使い方 | お宝マップ</title>
+<meta name="description" content="砂金・鉱物・化石の採集候補地">
+<link rel="alternate" hreflang="x-default" href="https://kinpatusan.github.io/otakara-map/howto.html">
+<link rel="alternate" hreflang="ja" href="https://kinpatusan.github.io/otakara-map/ja/howto.html">
+<link rel="alternate" hreflang="en" href="https://kinpatusan.github.io/otakara-map/en/howto.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://kinpatusan.github.io/otakara-map/zh-Hans/howto.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://kinpatusan.github.io/otakara-map/zh-Hant/howto.html">
+<link rel="alternate" hreflang="ko" href="https://kinpatusan.github.io/otakara-map/ko/howto.html">
+<link rel="alternate" hreflang="es" href="https://kinpatusan.github.io/otakara-map/es/howto.html">
+<link rel="alternate" hreflang="fr" href="https://kinpatusan.github.io/otakara-map/fr/howto.html">
+<link rel="alternate" hreflang="de" href="https://kinpatusan.github.io/otakara-map/de/howto.html">
+<link rel="alternate" hreflang="it" href="https://kinpatusan.github.io/otakara-map/it/howto.html">
+<link rel="alternate" hreflang="pt-BR" href="https://kinpatusan.github.io/otakara-map/pt-BR/howto.html">
+<style>
+:root{
+  --gold:#c8a34a; --gold-soft:#e6d3a3;
+  --ink:#1b1b1f; --sub:#6b6b73; --line:#e6e6ea;
+  --bg:#fbfaf7; --card:#fff; --accent:#7c6bd6;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --ink:#ececf1; --sub:#a0a0a8; --line:#33333a;
+         --bg:#141416; --card:#1d1d21; --gold:#d9b968; --gold-soft:#e6d3a3; }
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",
+    "Segoe UI",system-ui,sans-serif;
+  line-height:1.85; -webkit-text-size-adjust:100%;
+}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px 72px}
+header.site{
+  background:linear-gradient(160deg,#2b2620 0%,#3d3527 55%,#241f1a 100%);
+  color:#fff; padding:34px 0 30px; margin-bottom:34px;
+}
+header.site .wrap{padding-bottom:0}
+.brand{display:flex;align-items:center;gap:14px}
+.brand .mark{
+  width:52px;height:52px;border-radius:13px;flex:none;display:block;
+  box-shadow:0 3px 12px rgba(0,0,0,.4);
+}
+.brand h1{font-size:1.28rem;margin:0;letter-spacing:.01em}
+.brand p{margin:2px 0 0;color:var(--gold-soft);font-size:.85rem}
+nav.site{margin-top:22px;display:flex;gap:8px;flex-wrap:wrap}
+nav.site a{
+  color:#fff;text-decoration:none;font-size:.86rem;
+  padding:7px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.28);
+}
+nav.site a.on{background:var(--gold);border-color:var(--gold);color:#241f1a;font-weight:700}
+h2{
+  font-size:1.06rem;margin:2.4rem 0 .8rem;padding-left:.65rem;
+  border-left:4px solid var(--gold);line-height:1.5;
+}
+p{margin:.7rem 0}
+.lead{color:var(--sub);font-size:.97rem}
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:14px;
+  padding:4px 20px;margin:1rem 0;
+}
+ul{padding-left:1.2rem;margin:.6rem 0}
+li{margin:.35rem 0}
+a{color:#8a6fd8}
+.faq dt{font-weight:700;margin-top:1.3rem}
+.faq dd{margin:.3rem 0 0;color:var(--sub)}
+.mail{
+  display:inline-block;margin:.3rem 0 .6rem;padding:11px 18px;border-radius:10px;
+  background:var(--gold);color:#241f1a;font-weight:700;text-decoration:none;
+}
+.langs{margin-top:2.6rem;padding-top:1.2rem;border-top:1px solid var(--line)}
+.langs .label{color:var(--sub);font-size:.8rem;margin-bottom:.5rem}
+.langs a{
+  display:inline-block;margin:0 .45rem .5rem 0;padding:5px 12px;
+  border:1px solid var(--line);border-radius:999px;font-size:.84rem;
+  text-decoration:none;color:var(--ink);background:var(--card);
+}
+.langs a.on{border-color:var(--gold);color:var(--gold);font-weight:700}
+footer.site{color:var(--sub);font-size:.8rem;margin-top:2.4rem;
+  padding-top:1.2rem;border-top:1px solid var(--line)}
+.hub{max-width:520px;margin:12vh auto;text-align:center;padding:0 20px}
+.hub .langs{border:0}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <div class="brand">
+      <img class="mark" src="../icon.png" alt="" width="52" height="52">
+      <div>
+        <h1>お宝マップ</h1>
+        <p>砂金・鉱物・化石の採集候補地</p>
+      </div>
+    </div>
+    <nav class="site"><a href="./howto.html" class="on">使い方</a><a href="./support.html" class="">サポート</a><a href="./privacy.html" class="">プライバシー</a></nav>
+  </div>
+</header>
+<main class="wrap">
+  <p class="lead">地図の読み方・絞り込み・パックの買い方・圏外での使い方をまとめてあります。</p>
+  <h2>4つのタブ</h2>
+  <dl class="faq"><dt>「マップ」タブ</dt><dd>候補地を地図で見ます。左上の「凡例」に、色・形・大きさ・線の意味をまとめてあります。</dd><dt>「パック」タブ</dt><dd>収録しているエリアを一覧から探します。買うのもここです。</dd><dt>「マイ」タブ</dt><dd>★を付けたパックと、地点ごとの記録が集まります。</dd><dt>「設定」タブ</dt><dd>この使い方・ルールと免責・購入の復元・言語・屋外モードがあります。</dd></dl>
+  <p class="lead">この画面は「設定」からいつでも開けます。</p>
+  <h2>地図の読み方</h2>
+  <dl class="faq"><dt>色＝鉱物</dt><dd>何の石の候補かを色で表します。</dd><dt>大きさ＝期待度</dt><dd>大きい印ほど石が集まりやすい場所です(期待度：大／中／小)。産出を保証するものではありません。</dd><dt>形＝場所の種類</dt><dd>●砂礫の面・◎転石の面・■岩が出ている面は、そこで採る面です。▽は「入口の目印」で、採る場所そのものではありません。</dd><dt>線＝探す区間</dt><dd>実線＝川原・浜・露頭であることをデータで確認できた区間。破線＝候補区間(現地で確かめてから探してください)。</dd></dl>
+  <p class="lead">同じことをマップ左上の「凡例」にも置いてあります。現地で迷ったらそちらが近道です。</p>
+  <h2>点で探すか、帯で探すか</h2>
+  <dl class="faq"><dt>砂金・砂白金は「点」</dt><dd>比重が桁違いに重く、水がカーブの内側や岩の割れ目という一点に選り分けます。だからその点に立つ意味があります。</dd><dt>ほかの鉱物は「帯」</dt><dd>まわりの石と比重が変わらず、一点には溜まりません。線で示した区間のどこでも可能性があります。</dd><dt>帯の太さは点の大きさと同じ意味</dt><dd>太い帯ほど期待度が大きく、その上には大きい印が乗ります。</dd></dl>
+  <p class="lead">川か海岸かではなく、その鉱物がまわりの石より重いかどうかで決まります。</p>
+  <h2>絞り込みと検索</h2>
+  <dl class="faq"><dt>鉱物で絞る</dt><dd>マップの下の帯で、鉱物と体験施設の表示を切り替えます。「すべて非表示」で一度消してから、見たいものだけ戻すのが早いです。</dd><dt>「行きやすさ」で絞る</dt><dd>「すぐ行ける」「ひと歩き」「難所あり」「不明」の4つです。「不明」は道路データが届かなかった地点で、行けないという意味ではありません。</dd><dt>季節を切り替える</dt><dd>海岸は漂砂の向きが季節で入れ替わるので、濃淡も季節で変わります。既定は今日の季節で、「今に戻す」で戻ります。</dd><dt>地名で探す</dt><dd>マップ上の検索欄に、地名・パック名・川の名前を入れます。収録していない場所も地図を動かして見られます。</dd></dl>
+  <p class="lead">絞り込みをまとめて戻すときは「設定」の「地図のフィルタをすべて表示に戻す」を使ってください。</p>
+  <h2>無料で使えるもの</h2>
+  <dl class="faq"><dt>無料で開いているパック 17件</dt><dd>候補地点・根拠・記録まで、有料パックと同じ機能で使えます。帯(線)の表示もここで試せます。</dd><dt>体験施設・公認スポット 27件</dt><dd>場所が公開情報なので無料で収録しています。初めての方は、まず施設で採り方を覚えるのが確実です。</dd><dt>「鉱物図鑑」も無料</dt><dd>見分け方も変種もサメの歯の種も、全部無料で読めます。</dd></dl>
+  <p class="lead">見つからなかった場所の記録も、研究ノートとして無料で公開しています。</p>
+  <h2>パックの買い方</h2>
+  <dl class="faq"><dt>有料のパック 113件</dt><dd>収録している鉱物・化石は17種です。買いたいエリアのパックを「パック」タブか、地図の鍵つきの印から開きます。</dd><dt>1回の購入で全部ひらく</dt><dd>産地や河川をまとめたパックは、1回の購入で中の全エリアが地図に載ります。エリア単位では販売していません。</dd><dt>まとめ買い</dt><dd>地方単位・全部入りのまとめ買いは、単品を足すより安くなります。単品を先に買ってから切り替えても差額は戻らないので、先にご覧ください。</dd><dt>買い切り・復元できる</dt><dd>購読や以後の追加費用はありません。機種変更や再インストールのあとは「設定」の「購入を復元」で戻ります(購入時と同じApple IDでサインインしてください)。</dd></dl>
+  <p class="lead">価格はストアの表示が正です。無料のパックと図鑑は、買わなくてもそのまま使えます。</p>
+  <h2>「マイ」に記録する</h2>
+  <dl class="faq"><dt>★＝「気になる」の印</dt><dd>パック詳細で★を付けると「マイ」に集まります。単品で揃えた場合の合計と、それを含むまとめ買いも出ます。</dd><dt>「行きたい」「行った」「見つけた！」</dt><dd>解放したパックの地点ごとに記録できます。</dd><dt>記録は端末の中だけ</dt><dd>記録も現在地も、外部へ送りません。開発者から見ることはできません。</dd></dl>
+  <p class="lead">現地で色が出たら、地点詳細の報告ボタンから地点IDと写真をお送りください。次の版の材料になります。</p>
+  <h2>「鉱物図鑑」で予習する</h2>
+  <dl class="faq"><dt>見た目・見分け方・間違えやすいもの</dt><dd>鉱物ごとに、現地でできる見分け方と、よく間違えるものを並べてあります。</dd><dt>変種とサメの歯の種</dt><dd>めのうやガーネットの色違い、日本の浜で拾えるサメの歯の種も引けます。</dd><dt>パックから直接ひらく</dt><dd>パック詳細の「このエリアで採れるもの」から、その石の図鑑へ飛べます。</dd></dl>
+  <p class="lead">同じ名前で呼ばれていても、産地が違えば種も時代も違います。出かける前に一度読んでおくと、現地で拾う石が変わります。</p>
+  <h2>行く前に読む</h2>
+  <dl class="faq"><dt>「違反のおそれあり」も隠さない</dt><dd>天然記念物の区域や、許可が要る場所も、消さずに収録して条件を書いています。地図から消すのは「そこに立てない場所」だけです。</dd><dt>解放の前に「行く前に読む（法規・危険）」</dt><dd>有料パックを解放するときは、その土地の法規と危険を読む画面を必ず通ります。</dd><dt>「宝探しの3つのルール・免責」を開く</dt><dd>入っていい場所だけで遊ぶ・次も遊べる状態で残す・自然を甘く見ない。「設定」から読めます。</dd></dl>
+  <p class="lead">候補地点はあくまで候補です。立入や採取の可否は場所ごとに管理者が違うので、出発前にご自身で確かめてください。</p>
+  <h2>圏外での使い方</h2>
+  <dl class="faq"><dt>圏外でも地点は出る</dt><dd>候補地点・根拠・記録は端末の中のデータで動きます。通信が要るのは地図の背景だけです。</dd><dt>出発前に地図を出しておく</dt><dd>山間部は圏外が多いので、目的のエリアを一度表示して背景を読み込んでおくと安心です。</dd><dt>「GPXで書き出す（GPSアプリ連携）」で持ち出す</dt><dd>パック詳細から、登山GPSアプリへ地点を持ち出せます。</dd></dl>
+  <p class="lead">地図の背景は、一度表示した範囲だけが端末に残ります。</p>
+  <div class="langs">
+    <div class="label">言語</div>
+    <a href="../ja/howto.html" class="on">日本語</a><a href="../en/howto.html" class="">English</a><a href="../zh-Hans/howto.html" class="">简体中文</a><a href="../zh-Hant/howto.html" class="">繁體中文</a><a href="../ko/howto.html" class="">한국어</a><a href="../es/howto.html" class="">Español</a><a href="../fr/howto.html" class="">Français</a><a href="../de/howto.html" class="">Deutsch</a><a href="../it/howto.html" class="">Italiano</a><a href="../pt-BR/howto.html" class="">Português</a>
+  </div>
+  <footer class="site">
+    本アプリは採集候補地の地図です。発見を保証するものではありません。<br>最終更新: 2026年9月20日 ・
+    <a href="https://note.com/kinpatusan">note</a> ・
+    <a href="../support.html">サポート</a> ・ <a href="../privacy.html">プライバシー</a>
+  </footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mode d’emploi | Carte aux Trésors Japon</title>
+<meta name="description" content="Sites potentiels d'orpaillage, de minéraux et de fossiles">
+<link rel="alternate" hreflang="x-default" href="https://kinpatusan.github.io/otakara-map/howto.html">
+<link rel="alternate" hreflang="ja" href="https://kinpatusan.github.io/otakara-map/ja/howto.html">
+<link rel="alternate" hreflang="en" href="https://kinpatusan.github.io/otakara-map/en/howto.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://kinpatusan.github.io/otakara-map/zh-Hans/howto.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://kinpatusan.github.io/otakara-map/zh-Hant/howto.html">
+<link rel="alternate" hreflang="ko" href="https://kinpatusan.github.io/otakara-map/ko/howto.html">
+<link rel="alternate" hreflang="es" href="https://kinpatusan.github.io/otakara-map/es/howto.html">
+<link rel="alternate" hreflang="fr" href="https://kinpatusan.github.io/otakara-map/fr/howto.html">
+<link rel="alternate" hreflang="de" href="https://kinpatusan.github.io/otakara-map/de/howto.html">
+<link rel="alternate" hreflang="it" href="https://kinpatusan.github.io/otakara-map/it/howto.html">
+<link rel="alternate" hreflang="pt-BR" href="https://kinpatusan.github.io/otakara-map/pt-BR/howto.html">
+<style>
+:root{
+  --gold:#c8a34a; --gold-soft:#e6d3a3;
+  --ink:#1b1b1f; --sub:#6b6b73; --line:#e6e6ea;
+  --bg:#fbfaf7; --card:#fff; --accent:#7c6bd6;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --ink:#ececf1; --sub:#a0a0a8; --line:#33333a;
+         --bg:#141416; --card:#1d1d21; --gold:#d9b968; --gold-soft:#e6d3a3; }
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",
+    "Segoe UI",system-ui,sans-serif;
+  line-height:1.85; -webkit-text-size-adjust:100%;
+}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px 72px}
+header.site{
+  background:linear-gradient(160deg,#2b2620 0%,#3d3527 55%,#241f1a 100%);
+  color:#fff; padding:34px 0 30px; margin-bottom:34px;
+}
+header.site .wrap{padding-bottom:0}
+.brand{display:flex;align-items:center;gap:14px}
+.brand .mark{
+  width:52px;height:52px;border-radius:13px;flex:none;display:block;
+  box-shadow:0 3px 12px rgba(0,0,0,.4);
+}
+.brand h1{font-size:1.28rem;margin:0;letter-spacing:.01em}
+.brand p{margin:2px 0 0;color:var(--gold-soft);font-size:.85rem}
+nav.site{margin-top:22px;display:flex;gap:8px;flex-wrap:wrap}
+nav.site a{
+  color:#fff;text-decoration:none;font-size:.86rem;
+  padding:7px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.28);
+}
+nav.site a.on{background:var(--gold);border-color:var(--gold);color:#241f1a;font-weight:700}
+h2{
+  font-size:1.06rem;margin:2.4rem 0 .8rem;padding-left:.65rem;
+  border-left:4px solid var(--gold);line-height:1.5;
+}
+p{margin:.7rem 0}
+.lead{color:var(--sub);font-size:.97rem}
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:14px;
+  padding:4px 20px;margin:1rem 0;
+}
+ul{padding-left:1.2rem;margin:.6rem 0}
+li{margin:.35rem 0}
+a{color:#8a6fd8}
+.faq dt{font-weight:700;margin-top:1.3rem}
+.faq dd{margin:.3rem 0 0;color:var(--sub)}
+.mail{
+  display:inline-block;margin:.3rem 0 .6rem;padding:11px 18px;border-radius:10px;
+  background:var(--gold);color:#241f1a;font-weight:700;text-decoration:none;
+}
+.langs{margin-top:2.6rem;padding-top:1.2rem;border-top:1px solid var(--line)}
+.langs .label{color:var(--sub);font-size:.8rem;margin-bottom:.5rem}
+.langs a{
+  display:inline-block;margin:0 .45rem .5rem 0;padding:5px 12px;
+  border:1px solid var(--line);border-radius:999px;font-size:.84rem;
+  text-decoration:none;color:var(--ink);background:var(--card);
+}
+.langs a.on{border-color:var(--gold);color:var(--gold);font-weight:700}
+footer.site{color:var(--sub);font-size:.8rem;margin-top:2.4rem;
+  padding-top:1.2rem;border-top:1px solid var(--line)}
+.hub{max-width:520px;margin:12vh auto;text-align:center;padding:0 20px}
+.hub .langs{border:0}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <div class="brand">
+      <img class="mark" src="../icon.png" alt="" width="52" height="52">
+      <div>
+        <h1>Carte aux Trésors Japon</h1>
+        <p>Sites potentiels d'orpaillage, de minéraux et de fossiles</p>
+      </div>
+    </div>
+    <nav class="site"><a href="./howto.html" class="on">Mode d’emploi</a><a href="./support.html" class="">Assistance</a><a href="./privacy.html" class="">Confidentialité</a></nav>
+  </div>
+</header>
+<main class="wrap">
+  <p class="lead">Comment lire la carte, la filtrer, comment les packs sont vendus et comment utiliser l’app hors réseau.</p>
+  <h2>Les quatre onglets</h2>
+  <dl class="faq"><dt>Onglet « Carte »</dt><dd>Affiche les sites candidats sur la carte. En haut à gauche, « Légende » explique le sens des couleurs, des formes, des tailles et des lignes.</dd><dt>Onglet « Packs »</dt><dd>Parcourez la liste des zones incluses. C’est aussi ici que l’on achète.</dd><dt>Onglet « Ma liste »</dt><dd>Vous y retrouvez les packs marqués d’une ★ et vos notes pour chaque point.</dd><dt>Onglet « Réglages »</dt><dd>On y trouve ce mode d’emploi, les règles et l’avertissement, la restauration des achats, la langue et le mode extérieur.</dd></dl>
+  <p class="lead">Vous pouvez ouvrir cette page à tout moment depuis « Réglages ».</p>
+  <h2>Lire la carte</h2>
+  <dl class="faq"><dt>Couleur = minéral</dt><dd>La couleur indique de quelle pierre le site est un candidat.</dd><dt>Taille = attente</dt><dd>Plus le repère est grand, plus les pierres s’y accumulent facilement (Potentiel : élevé / moyen / faible). Cela ne garantit aucune trouvaille.</dd><dt>Forme = type de lieu</dt><dd>● surface de graviers, ◎ surface de blocs détachés et ■ roche affleurante sont des surfaces où l’on ramasse. ▽ est un « repère d’accès », pas le lieu de ramassage lui-même.</dd><dt>Ligne = section à prospecter</dt><dd>Trait plein = tronçon confirmé par les données comme lit de rivière, plage ou affleurement. Trait pointillé = tronçon candidat (vérifiez sur place avant de prospecter).</dd></dl>
+  <p class="lead">La même chose figure dans « Légende », en haut à gauche de la carte : plus rapide d’accès sur le terrain.</p>
+  <h2>Un point ou un tronçon</h2>
+  <dl class="faq"><dt>Or et platine alluviaux : un point</dt><dd>Leur densité est d’un tout autre ordre : l’eau les trie en des points précis — l’intérieur d’un méandre, une fissure de la roche. D’où l’intérêt de se placer exactement là.</dd><dt>Autres minéraux : un tronçon</dt><dd>Leur densité diffère peu de celle des pierres voisines : ils ne s’accumulent pas en un point. Tout le tronçon tracé en ligne est possible.</dd><dt>L’épaisseur du trait a le même sens que la taille du repère</dt><dd>Plus le trait est épais, plus le potentiel est élevé, et plus les repères qui s’y posent sont grands.</dd></dl>
+  <p class="lead">Ce n’est pas rivière ou littoral qui décide, mais le fait que le minéral soit plus lourd que les pierres alentour.</p>
+  <h2>Filtres et recherche</h2>
+  <dl class="faq"><dt>Filtrer par minéral</dt><dd>La barre en bas de la carte active ou masque les minéraux et les sites d’expérience. Le plus rapide est de toucher « Tout masquer » puis de ne réafficher que ce qui vous intéresse.</dd><dt>Filtrer par « Accès »</dt><dd>Il y en a quatre : « Accès facile », « Courte marche », « Terrain difficile » et « Inconnu ». « Inconnu » signifie qu’aucune donnée routière n’atteignait le site, pas qu’on ne peut pas y aller.</dd><dt>Changer de saison</dt><dd>Sur le littoral, la dérive littorale s’inverse selon la saison : le dégradé change donc lui aussi. Par défaut, la saison du jour ; « Maintenant » y revient.</dd><dt>Rechercher par nom de lieu</dt><dd>Saisissez un nom de lieu, de pack ou de rivière dans le champ de recherche de la carte. Vous pouvez aussi vous déplacer vers des lieux non couverts.</dd></dl>
+  <p class="lead">Pour annuler tous les filtres d’un coup, utilisez « Réafficher toutes les couches » dans « Réglages ».</p>
+  <h2>Ce qui est gratuit</h2>
+  <dl class="faq"><dt>17 packs ouverts gratuitement</dt><dd>Les sites candidats, leurs justifications et les notes fonctionnent comme dans un pack payant. Vous pouvez aussi y essayer l’affichage en tronçon (ligne).</dd><dt>27 sites d'expérience agréés</dt><dd>Leur emplacement est une information publique : ils sont donc inclus gratuitement. Pour une première sortie, apprendre la technique sur place est le plus sûr.</dd><dt>Le « Guide des minéraux » est gratuit lui aussi</dt><dd>Les critères de reconnaissance, les variétés et les espèces de dents de requin sont tous consultables gratuitement.</dd></dl>
+  <p class="lead">Les relevés des lieux où rien n’a été trouvé sont eux aussi publiés gratuitement, sous forme de notes de recherche.</p>
+  <h2>Comment acheter un pack</h2>
+  <dl class="faq"><dt>113 packs payants</dt><dd>17 types de minéraux et fossiles sont couverts. Ouvrez le pack de la zone voulue depuis l’onglet « Packs » ou depuis un repère cadenassé sur la carte.</dd><dt>Un seul achat ouvre le tout</dt><dd>Pour les packs regroupant plusieurs gisements ou rivières, un seul achat affiche toutes les zones qu’ils contiennent. Ils ne sont pas vendus zone par zone.</dd><dt>Achats groupés</dt><dd>Les lots par région et le lot complet reviennent moins cher que l’addition des packs isolés. Passer au lot après avoir acheté à l’unité ne rembourse pas la différence : regardez-les d’abord.</dd><dt>Achat unique, restaurable</dt><dd>Pas d’abonnement ni de frais ultérieurs. Après un changement d’appareil ou une réinstallation, utilisez « Restaurer les achats » dans « Réglages » (connectez-vous avec l’identifiant Apple utilisé lors de l’achat).</dd></dl>
+  <p class="lead">Le prix qui fait foi est celui affiché sur l’App Store. Les packs gratuits et le guide fonctionnent sans achat.</p>
+  <h2>Prendre des notes dans « Ma liste »</h2>
+  <dl class="faq"><dt>★ = le repère « À suivre »</dt><dd>Marquez un pack d’une ★ sur sa fiche : il rejoint « Ma liste », avec le total à l’achat à l’unité et le lot qui le contient.</dd><dt>« À visiter », « Visité », « Trouvé ! »</dt><dd>Vous pouvez les noter pour chaque point d’un pack déverrouillé.</dd><dt>Vos notes restent sur l’appareil</dt><dd>Ni vos notes ni votre position ne sont envoyées ailleurs. Le développeur ne peut pas les voir.</dd></dl>
+  <p class="lead">Si vous voyez de la couleur sur le terrain, envoyez-nous l’identifiant du site et une photo via le bouton de signalement dans le détail du site. Cela nourrira la prochaine version.</p>
+  <h2>Se préparer avec le « Guide des minéraux »</h2>
+  <dl class="faq"><dt>Aspect, critères de reconnaissance, confusions fréquentes</dt><dd>Pour chaque minéral, les tests réalisables sur le terrain et les confusions les plus fréquentes.</dd><dt>Variétés et espèces de dents de requin</dt><dd>Vous pouvez aussi consulter les variétés de couleur de l’agate et du grenat, ainsi que les espèces de dents de requin des plages japonaises.</dd><dt>L’ouvrir directement depuis un pack</dt><dd>Depuis « Ce que l’on trouve ici », sur la fiche d’un pack, vous accédez directement à cette pierre dans le guide.</dd></dl>
+  <p class="lead">Un même nom peut recouvrir des espèces et des époques différentes selon le gisement. Le lire une fois avant de partir change les pierres que vous ramassez.</p>
+  <h2>À lire avant de partir</h2>
+  <dl class="faq"><dt>Les sites « susceptibles d’infraction » ne sont pas cachés</dt><dd>Les zones classées monument naturel et les lieux soumis à autorisation restent présents, avec les conditions détaillées. Seuls sont retirés les sites où l’on ne peut physiquement pas se tenir.</dd><dt>Avant le déverrouillage : « À lire avant de partir (réglementation et dangers) »</dt><dd>Le déverrouillage d’un pack payant passe toujours par un écran sur la réglementation locale et les dangers.</dd><dt>Ouvrir « Les 3 règles et avertissement »</dt><dd>Ne prospecter que là où l’accès est permis ; laisser le site en état pour la fois suivante ; ne pas sous-estimer la nature. À lire dans « Réglages ».</dd></dl>
+  <p class="lead">Les sites candidats ne sont que des candidats. Le gestionnaire qui autorise l’accès et le ramassage change d’un lieu à l’autre : vérifiez vous-même avant de partir.</p>
+  <h2>Utilisation hors réseau</h2>
+  <dl class="faq"><dt>Les sites s’affichent même hors réseau</dt><dd>Les sites candidats, leurs justifications et vos notes fonctionnent avec les données stockées sur l’appareil. Seul le fond de carte nécessite une connexion.</dd><dt>Chargez la carte avant de partir</dt><dd>La couverture est souvent mauvaise en montagne : affichez une fois la zone visée pour que le fond se charge.</dd><dt>Les emporter avec « Exporter en GPX (apps GPS) »</dt><dd>Depuis la fiche d’un pack, vous pouvez exporter les points vers une app GPS de randonnée.</dd></dl>
+  <p class="lead">Du fond de carte, seule la zone déjà affichée reste sur l’appareil.</p>
+  <div class="langs">
+    <div class="label">Langue</div>
+    <a href="../ja/howto.html" class="">日本語</a><a href="../en/howto.html" class="">English</a><a href="../zh-Hans/howto.html" class="">简体中文</a><a href="../zh-Hant/howto.html" class="">繁體中文</a><a href="../ko/howto.html" class="">한국어</a><a href="../es/howto.html" class="">Español</a><a href="../fr/howto.html" class="on">Français</a><a href="../de/howto.html" class="">Deutsch</a><a href="../it/howto.html" class="">Italiano</a><a href="../pt-BR/howto.html" class="">Português</a>
+  </div>
+  <footer class="site">
+    Cette application est une carte de sites potentiels de collecte. Elle ne garantit aucune découverte.<br>Dernière mise à jour : 2026-09-20 ・
+    <a href="https://note.com/kinpatusan">note</a> ・
+    <a href="../support.html">Assistance</a> ・ <a href="../privacy.html">Confidentialité</a>
+  </footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>사용법 | 보물 지도</title>
+<meta name="description" content="사금·광물·화석 채집 후보지">
+<link rel="alternate" hreflang="x-default" href="https://kinpatusan.github.io/otakara-map/howto.html">
+<link rel="alternate" hreflang="ja" href="https://kinpatusan.github.io/otakara-map/ja/howto.html">
+<link rel="alternate" hreflang="en" href="https://kinpatusan.github.io/otakara-map/en/howto.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://kinpatusan.github.io/otakara-map/zh-Hans/howto.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://kinpatusan.github.io/otakara-map/zh-Hant/howto.html">
+<link rel="alternate" hreflang="ko" href="https://kinpatusan.github.io/otakara-map/ko/howto.html">
+<link rel="alternate" hreflang="es" href="https://kinpatusan.github.io/otakara-map/es/howto.html">
+<link rel="alternate" hreflang="fr" href="https://kinpatusan.github.io/otakara-map/fr/howto.html">
+<link rel="alternate" hreflang="de" href="https://kinpatusan.github.io/otakara-map/de/howto.html">
+<link rel="alternate" hreflang="it" href="https://kinpatusan.github.io/otakara-map/it/howto.html">
+<link rel="alternate" hreflang="pt-BR" href="https://kinpatusan.github.io/otakara-map/pt-BR/howto.html">
+<style>
+:root{
+  --gold:#c8a34a; --gold-soft:#e6d3a3;
+  --ink:#1b1b1f; --sub:#6b6b73; --line:#e6e6ea;
+  --bg:#fbfaf7; --card:#fff; --accent:#7c6bd6;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --ink:#ececf1; --sub:#a0a0a8; --line:#33333a;
+         --bg:#141416; --card:#1d1d21; --gold:#d9b968; --gold-soft:#e6d3a3; }
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",
+    "Segoe UI",system-ui,sans-serif;
+  line-height:1.85; -webkit-text-size-adjust:100%;
+}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px 72px}
+header.site{
+  background:linear-gradient(160deg,#2b2620 0%,#3d3527 55%,#241f1a 100%);
+  color:#fff; padding:34px 0 30px; margin-bottom:34px;
+}
+header.site .wrap{padding-bottom:0}
+.brand{display:flex;align-items:center;gap:14px}
+.brand .mark{
+  width:52px;height:52px;border-radius:13px;flex:none;display:block;
+  box-shadow:0 3px 12px rgba(0,0,0,.4);
+}
+.brand h1{font-size:1.28rem;margin:0;letter-spacing:.01em}
+.brand p{margin:2px 0 0;color:var(--gold-soft);font-size:.85rem}
+nav.site{margin-top:22px;display:flex;gap:8px;flex-wrap:wrap}
+nav.site a{
+  color:#fff;text-decoration:none;font-size:.86rem;
+  padding:7px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.28);
+}
+nav.site a.on{background:var(--gold);border-color:var(--gold);color:#241f1a;font-weight:700}
+h2{
+  font-size:1.06rem;margin:2.4rem 0 .8rem;padding-left:.65rem;
+  border-left:4px solid var(--gold);line-height:1.5;
+}
+p{margin:.7rem 0}
+.lead{color:var(--sub);font-size:.97rem}
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:14px;
+  padding:4px 20px;margin:1rem 0;
+}
+ul{padding-left:1.2rem;margin:.6rem 0}
+li{margin:.35rem 0}
+a{color:#8a6fd8}
+.faq dt{font-weight:700;margin-top:1.3rem}
+.faq dd{margin:.3rem 0 0;color:var(--sub)}
+.mail{
+  display:inline-block;margin:.3rem 0 .6rem;padding:11px 18px;border-radius:10px;
+  background:var(--gold);color:#241f1a;font-weight:700;text-decoration:none;
+}
+.langs{margin-top:2.6rem;padding-top:1.2rem;border-top:1px solid var(--line)}
+.langs .label{color:var(--sub);font-size:.8rem;margin-bottom:.5rem}
+.langs a{
+  display:inline-block;margin:0 .45rem .5rem 0;padding:5px 12px;
+  border:1px solid var(--line);border-radius:999px;font-size:.84rem;
+  text-decoration:none;color:var(--ink);background:var(--card);
+}
+.langs a.on{border-color:var(--gold);color:var(--gold);font-weight:700}
+footer.site{color:var(--sub);font-size:.8rem;margin-top:2.4rem;
+  padding-top:1.2rem;border-top:1px solid var(--line)}
+.hub{max-width:520px;margin:12vh auto;text-align:center;padding:0 20px}
+.hub .langs{border:0}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <div class="brand">
+      <img class="mark" src="../icon.png" alt="" width="52" height="52">
+      <div>
+        <h1>보물 지도</h1>
+        <p>사금·광물·화석 채집 후보지</p>
+      </div>
+    </div>
+    <nav class="site"><a href="./howto.html" class="on">사용법</a><a href="./support.html" class="">지원</a><a href="./privacy.html" class="">개인정보 처리방침</a></nav>
+  </div>
+</header>
+<main class="wrap">
+  <p class="lead">지도 읽는 법, 필터, 팩 구매 방법, 권외에서 쓰는 법을 정리했습니다.</p>
+  <h2>4개의 탭</h2>
+  <dl class="faq"><dt>'지도' 탭</dt><dd>후보지를 지도에서 봅니다. 왼쪽 위의 '범례'에 색·모양·크기·선의 의미를 정리해 두었습니다.</dd><dt>'팩' 탭</dt><dd>수록된 지역을 목록에서 찾습니다. 구매도 여기서 합니다.</dd><dt>'내 목록' 탭</dt><dd>★을 붙인 팩과 지점별 기록이 모입니다.</dd><dt>'설정' 탭</dt><dd>이 사용법, 규칙과 면책, 구매 복원, 언어, 야외 모드가 있습니다.</dd></dl>
+  <p class="lead">이 화면은 '설정'에서 언제든지 열 수 있습니다.</p>
+  <h2>지도 읽는 법</h2>
+  <dl class="faq"><dt>색=광물</dt><dd>어떤 돌의 후보인지를 색으로 나타냅니다.</dd><dt>크기=기대도</dt><dd>표식이 클수록 돌이 모이기 쉬운 곳입니다(기대도: 높음/보통/낮음). 산출을 보장하지는 않습니다.</dd><dt>모양=장소의 종류</dt><dd>●자갈 면·◎전석 면·■암반이 드러난 면은 그곳에서 채집하는 면입니다. ▽는 '진입 지점 표식'이며 채집 장소 자체는 아닙니다.</dd><dt>선=찾는 구간</dt><dd>실선=강가·해변·노두임을 데이터로 확인한 구간. 파선=후보 구간(현장에서 확인한 뒤에 찾으세요).</dd></dl>
+  <p class="lead">같은 내용을 지도 왼쪽 위의 '범례'에도 두었습니다. 현장에서 헤맬 때는 그쪽이 빠릅니다.</p>
+  <h2>점으로 찾을까, 띠로 찾을까</h2>
+  <dl class="faq"><dt>사금·사백금은 '점'</dt><dd>비중이 차원이 다르게 무거워, 물이 커브 안쪽이나 바위 틈 같은 한 점으로 골라냅니다. 그래서 그 점에 서는 의미가 있습니다.</dd><dt>다른 광물은 '띠'</dt><dd>주변 돌과 비중이 다르지 않아 한 점에 쌓이지 않습니다. 선으로 표시한 구간 어디에서나 가능성이 있습니다.</dd><dt>띠의 굵기는 점의 크기와 같은 의미</dt><dd>띠가 굵을수록 기대도가 크고, 그 위에는 큰 표식이 올라갑니다.</dd></dl>
+  <p class="lead">강이냐 해안이냐가 아니라, 그 광물이 주변 돌보다 무거운지로 정해집니다.</p>
+  <h2>필터와 검색</h2>
+  <dl class="faq"><dt>광물로 좁히기</dt><dd>지도 아래의 띠에서 광물과 체험 시설의 표시를 전환합니다. '모두 숨기기'로 한 번 지운 뒤 보고 싶은 것만 되돌리는 편이 빠릅니다.</dd><dt>'접근성'으로 좁히기</dt><dd>'쉽게 도달', '조금 걸음', '난코스 있음', '불명'의 네 가지입니다. '불명'은 도로 데이터가 닿지 않은 지점이며, 갈 수 없다는 뜻이 아닙니다.</dd><dt>계절 전환하기</dt><dd>해안은 표사의 방향이 계절에 따라 바뀌므로 농담도 계절에 따라 달라집니다. 기본값은 오늘의 계절이며 '현재로'를 누르면 돌아옵니다.</dd><dt>지명으로 찾기</dt><dd>지도 위 검색창에 지명·팩 이름·강 이름을 입력합니다. 수록하지 않은 장소도 지도를 움직여 볼 수 있습니다.</dd></dl>
+  <p class="lead">필터를 한꺼번에 되돌리려면 '설정'의 '지도 필터를 모두 표시로 되돌리기'를 사용하세요.</p>
+  <h2>무료로 쓸 수 있는 것</h2>
+  <dl class="faq"><dt>무료로 열려 있는 팩 17개</dt><dd>후보 지점·근거·기록까지 유료 팩과 같은 기능으로 쓸 수 있습니다. 띠(선) 표시도 여기서 체험할 수 있습니다.</dd><dt>체험 시설·공인 스팟 27곳</dt><dd>장소가 공개 정보이므로 무료로 수록하고 있습니다. 처음이라면 먼저 시설에서 채집 방법을 익히는 편이 확실합니다.</dd><dt>'광물 도감'도 무료</dt><dd>구별법도 변종도 상어 이빨의 종도 전부 무료로 읽을 수 있습니다.</dd></dl>
+  <p class="lead">찾지 못한 장소의 기록도 연구 노트로 무료 공개하고 있습니다.</p>
+  <h2>팩 구매 방법</h2>
+  <dl class="faq"><dt>유료 팩 113개</dt><dd>수록한 광물·화석은 17종입니다. 원하는 지역의 팩을 '팩' 탭이나 지도의 자물쇠 표식에서 엽니다.</dd><dt>1회 구매로 전부 열림</dt><dd>산지나 하천을 묶은 팩은 1회 구매로 그 안의 모든 지역이 지도에 표시됩니다. 지역 단위로는 판매하지 않습니다.</dd><dt>묶음 구매</dt><dd>지방 단위·전부 포함 묶음 구매는 단품을 더하는 것보다 쌉니다. 단품을 먼저 산 뒤 바꿔도 차액은 돌아오지 않으니 먼저 확인해 주세요.</dd><dt>1회 결제·복원 가능</dt><dd>구독이나 이후 추가 비용은 없습니다. 기기 변경이나 재설치 후에는 '설정'의 '구매 복원'으로 되돌립니다(구매 시와 같은 Apple ID로 로그인해 주세요).</dd></dl>
+  <p class="lead">가격은 스토어에 표시된 것이 정확합니다. 무료 팩과 도감은 구매하지 않아도 그대로 쓸 수 있습니다.</p>
+  <h2>'내 목록'에 기록하기</h2>
+  <dl class="faq"><dt>★ = '관심' 표시</dt><dd>팩 상세에서 ★을 붙이면 '내 목록'에 모입니다. 단품으로 갖출 경우의 합계와 그것을 포함한 묶음 구매도 표시됩니다.</dd><dt>'가고 싶다', '다녀옴', '발견!'</dt><dd>해제한 팩의 지점마다 기록할 수 있습니다.</dd><dt>기록은 기기 안에만</dt><dd>기록도 현재 위치도 외부로 보내지 않습니다. 개발자가 볼 수 없습니다.</dd></dl>
+  <p class="lead">현장에서 색이 나오면 지점 상세의 보고 버튼으로 지점 ID와 사진을 보내 주세요. 다음 판의 재료가 됩니다.</p>
+  <h2>'광물 도감'으로 예습하기</h2>
+  <dl class="faq"><dt>겉모습·구별법·헷갈리기 쉬운 것</dt><dd>광물마다 현장에서 할 수 있는 구별법과 자주 착각하는 것을 정리해 두었습니다.</dd><dt>변종과 상어 이빨의 종</dt><dd>마노나 가넷의 색 변종, 일본 해변에서 주울 수 있는 상어 이빨의 종도 찾아볼 수 있습니다.</dd><dt>팩에서 바로 열기</dt><dd>팩 상세의 '이 지역에서 나오는 것'에서 그 돌의 도감으로 이동할 수 있습니다.</dd></dl>
+  <p class="lead">같은 이름으로 불려도 산지가 다르면 종도 시대도 다릅니다. 나서기 전에 한 번 읽어 두면 현장에서 줍는 돌이 달라집니다.</p>
+  <h2>가기 전에 읽기</h2>
+  <dl class="faq"><dt>'위반 우려 있음'도 숨기지 않는다</dt><dd>천연기념물 구역이나 허가가 필요한 장소도 지우지 않고 수록하며 조건을 적어 둡니다. 지도에서 지우는 것은 '그곳에 설 수 없는 장소'뿐입니다.</dd><dt>해제 전에 '가기 전에 읽기 (법규·위험)'</dt><dd>유료 팩을 해제할 때는 그 지역의 법규와 위험을 읽는 화면을 반드시 거칩니다.</dd><dt>'보물찾기 3가지 규칙·면책' 열기</dt><dd>들어가도 되는 곳에서만 즐긴다·다음에도 즐길 수 있는 상태로 남긴다·자연을 얕보지 않는다. '설정'에서 읽을 수 있습니다.</dd></dl>
+  <p class="lead">후보 지점은 어디까지나 후보입니다. 출입과 채집의 가부는 장소마다 관리자가 다르므로 출발 전에 직접 확인해 주세요.</p>
+  <h2>권외에서 쓰는 법</h2>
+  <dl class="faq"><dt>권외에서도 지점은 표시된다</dt><dd>후보 지점·근거·기록은 기기 안의 데이터로 동작합니다. 통신이 필요한 것은 지도의 배경뿐입니다.</dd><dt>출발 전에 지도를 띄워 두기</dt><dd>산간에서는 권외가 많으므로 목적지 지역을 한 번 표시해 배경을 불러 두면 안심입니다.</dd><dt>'GPX 내보내기(GPS 앱 연동)'로 가져가기</dt><dd>팩 상세에서 등산용 GPS 앱으로 지점을 내보낼 수 있습니다.</dd></dl>
+  <p class="lead">지도의 배경은 한 번 표시한 범위만 기기에 남습니다.</p>
+  <div class="langs">
+    <div class="label">언어</div>
+    <a href="../ja/howto.html" class="">日本語</a><a href="../en/howto.html" class="">English</a><a href="../zh-Hans/howto.html" class="">简体中文</a><a href="../zh-Hant/howto.html" class="">繁體中文</a><a href="../ko/howto.html" class="on">한국어</a><a href="../es/howto.html" class="">Español</a><a href="../fr/howto.html" class="">Français</a><a href="../de/howto.html" class="">Deutsch</a><a href="../it/howto.html" class="">Italiano</a><a href="../pt-BR/howto.html" class="">Português</a>
+  </div>
+  <footer class="site">
+    이 앱은 채집 후보지를 보여주는 지도입니다. 발견을 보장하지 않습니다.<br>최종 업데이트: 2026-09-20 ・
+    <a href="https://note.com/kinpatusan">note</a> ・
+    <a href="../support.html">지원</a> ・ <a href="../privacy.html">개인정보 처리방침</a>
+  </footer>
+</main>
+</body>
+</html>

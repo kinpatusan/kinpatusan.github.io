@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cómo se usa | Mapa del Tesoro Japón</title>
+<meta name="description" content="Zonas candidatas para buscar oro de aluvión, minerales y fósiles">
+<link rel="alternate" hreflang="x-default" href="https://kinpatusan.github.io/otakara-map/howto.html">
+<link rel="alternate" hreflang="ja" href="https://kinpatusan.github.io/otakara-map/ja/howto.html">
+<link rel="alternate" hreflang="en" href="https://kinpatusan.github.io/otakara-map/en/howto.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://kinpatusan.github.io/otakara-map/zh-Hans/howto.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://kinpatusan.github.io/otakara-map/zh-Hant/howto.html">
+<link rel="alternate" hreflang="ko" href="https://kinpatusan.github.io/otakara-map/ko/howto.html">
+<link rel="alternate" hreflang="es" href="https://kinpatusan.github.io/otakara-map/es/howto.html">
+<link rel="alternate" hreflang="fr" href="https://kinpatusan.github.io/otakara-map/fr/howto.html">
+<link rel="alternate" hreflang="de" href="https://kinpatusan.github.io/otakara-map/de/howto.html">
+<link rel="alternate" hreflang="it" href="https://kinpatusan.github.io/otakara-map/it/howto.html">
+<link rel="alternate" hreflang="pt-BR" href="https://kinpatusan.github.io/otakara-map/pt-BR/howto.html">
+<style>
+:root{
+  --gold:#c8a34a; --gold-soft:#e6d3a3;
+  --ink:#1b1b1f; --sub:#6b6b73; --line:#e6e6ea;
+  --bg:#fbfaf7; --card:#fff; --accent:#7c6bd6;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --ink:#ececf1; --sub:#a0a0a8; --line:#33333a;
+         --bg:#141416; --card:#1d1d21; --gold:#d9b968; --gold-soft:#e6d3a3; }
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",
+    "Segoe UI",system-ui,sans-serif;
+  line-height:1.85; -webkit-text-size-adjust:100%;
+}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px 72px}
+header.site{
+  background:linear-gradient(160deg,#2b2620 0%,#3d3527 55%,#241f1a 100%);
+  color:#fff; padding:34px 0 30px; margin-bottom:34px;
+}
+header.site .wrap{padding-bottom:0}
+.brand{display:flex;align-items:center;gap:14px}
+.brand .mark{
+  width:52px;height:52px;border-radius:13px;flex:none;display:block;
+  box-shadow:0 3px 12px rgba(0,0,0,.4);
+}
+.brand h1{font-size:1.28rem;margin:0;letter-spacing:.01em}
+.brand p{margin:2px 0 0;color:var(--gold-soft);font-size:.85rem}
+nav.site{margin-top:22px;display:flex;gap:8px;flex-wrap:wrap}
+nav.site a{
+  color:#fff;text-decoration:none;font-size:.86rem;
+  padding:7px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.28);
+}
+nav.site a.on{background:var(--gold);border-color:var(--gold);color:#241f1a;font-weight:700}
+h2{
+  font-size:1.06rem;margin:2.4rem 0 .8rem;padding-left:.65rem;
+  border-left:4px solid var(--gold);line-height:1.5;
+}
+p{margin:.7rem 0}
+.lead{color:var(--sub);font-size:.97rem}
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:14px;
+  padding:4px 20px;margin:1rem 0;
+}
+ul{padding-left:1.2rem;margin:.6rem 0}
+li{margin:.35rem 0}
+a{color:#8a6fd8}
+.faq dt{font-weight:700;margin-top:1.3rem}
+.faq dd{margin:.3rem 0 0;color:var(--sub)}
+.mail{
+  display:inline-block;margin:.3rem 0 .6rem;padding:11px 18px;border-radius:10px;
+  background:var(--gold);color:#241f1a;font-weight:700;text-decoration:none;
+}
+.langs{margin-top:2.6rem;padding-top:1.2rem;border-top:1px solid var(--line)}
+.langs .label{color:var(--sub);font-size:.8rem;margin-bottom:.5rem}
+.langs a{
+  display:inline-block;margin:0 .45rem .5rem 0;padding:5px 12px;
+  border:1px solid var(--line);border-radius:999px;font-size:.84rem;
+  text-decoration:none;color:var(--ink);background:var(--card);
+}
+.langs a.on{border-color:var(--gold);color:var(--gold);font-weight:700}
+footer.site{color:var(--sub);font-size:.8rem;margin-top:2.4rem;
+  padding-top:1.2rem;border-top:1px solid var(--line)}
+.hub{max-width:520px;margin:12vh auto;text-align:center;padding:0 20px}
+.hub .langs{border:0}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <div class="brand">
+      <img class="mark" src="../icon.png" alt="" width="52" height="52">
+      <div>
+        <h1>Mapa del Tesoro Japón</h1>
+        <p>Zonas candidatas para buscar oro de aluvión, minerales y fósiles</p>
+      </div>
+    </div>
+    <nav class="site"><a href="./howto.html" class="on">Cómo se usa</a><a href="./support.html" class="">Soporte</a><a href="./privacy.html" class="">Privacidad</a></nav>
+  </div>
+</header>
+<main class="wrap">
+  <p class="lead">Cómo leer el mapa, cómo filtrarlo, cómo se venden los packs y cómo usar la app sin cobertura.</p>
+  <h2>Las cuatro pestañas</h2>
+  <dl class="faq"><dt>Pestaña «Mapa»</dt><dd>Muestra los sitios candidatos en el mapa. Arriba a la izquierda, «Leyenda» explica qué significan los colores, las formas, los tamaños y las líneas.</dd><dt>Pestaña «Packs»</dt><dd>Busca en una lista las zonas incluidas. También se compran aquí.</dd><dt>Pestaña «Mi lista»</dt><dd>Aquí se reúnen los packs marcados con ★ y tus registros de cada punto.</dd><dt>Pestaña «Ajustes»</dt><dd>Contiene esta guía, las reglas y el aviso legal, la restauración de compras, el idioma y el modo exterior.</dd></dl>
+  <p class="lead">Puedes abrir esta página desde «Ajustes» en cualquier momento.</p>
+  <h2>Cómo leer el mapa</h2>
+  <dl class="faq"><dt>Color = mineral</dt><dd>El color indica de qué piedra es candidato el punto.</dd><dt>Tamaño = expectativa</dt><dd>Cuanto mayor es la marca, más fácilmente se acumulan allí las piedras (Perspectiva: alta / media / baja). No garantiza ningún hallazgo.</dd><dt>Forma = tipo de lugar</dt><dd>● superficie de grava, ◎ superficie de cantos sueltos y ■ roca expuesta son superficies donde se recoge. ▽ es una «señal de acceso», no el lugar de recogida.</dd><dt>Línea = tramo de búsqueda</dt><dd>Línea continua = tramo confirmado por los datos como cauce, playa o afloramiento. Línea discontinua = tramo candidato (compruébalo sobre el terreno antes de buscar).</dd></dl>
+  <p class="lead">Lo mismo está en «Leyenda», arriba a la izquierda del mapa: es el camino más corto cuando estás en el campo.</p>
+  <h2>Un punto o un tramo</h2>
+  <dl class="faq"><dt>Oro y platino de aluvión: un punto</dt><dd>Su densidad es de otro orden, así que el agua los separa en puntos concretos: el interior de una curva, una grieta de la roca. Por eso vale la pena plantarse justo ahí.</dd><dt>Otros minerales: un tramo</dt><dd>Su densidad apenas difiere de la de las piedras vecinas, así que no se acumulan en un punto. Cualquier lugar del tramo dibujado como línea es posible.</dd><dt>El grosor de la línea significa lo mismo que el tamaño de la marca</dt><dd>Cuanto más gruesa es la línea, mayor es la perspectiva, y más grandes son las marcas que descansan sobre ella.</dd></dl>
+  <p class="lead">Lo decide no si es río o costa, sino si el mineral pesa más que las piedras que lo rodean.</p>
+  <h2>Filtros y búsqueda</h2>
+  <dl class="faq"><dt>Filtrar por mineral</dt><dd>La barra inferior del mapa activa y desactiva minerales y sitios de experiencia. Lo más rápido es pulsar «Ocultar todo» una vez y volver a mostrar solo lo que quieras ver.</dd><dt>Filtrar por «Acceso»</dt><dd>Son cuatro: «Acceso fácil», «Caminata corta», «Terreno difícil» y «Desconocido». «Desconocido» significa que no llegaban datos de carreteras al punto, no que no se pueda llegar.</dd><dt>Cambiar de estación</dt><dd>En la costa, la deriva litoral se invierte con la estación, así que el sombreado cambia con ella. Por defecto se usa la estación de hoy; «Ahora» vuelve a ella.</dd><dt>Buscar por nombre de lugar</dt><dd>Escribe un nombre de lugar, de pack o de río en el campo de búsqueda del mapa. También puedes desplazarte a lugares que la app no incluye.</dd></dl>
+  <p class="lead">Para deshacer todos los filtros a la vez, usa «Mostrar de nuevo todas las capas» en «Ajustes».</p>
+  <h2>Lo que puedes usar gratis</h2>
+  <dl class="faq"><dt>17 packs abiertos gratis</dt><dd>Los puntos candidatos, sus fundamentos y los registros funcionan igual que en un pack de pago. Aquí también puedes probar la visualización en tramo (línea).</dd><dt>27 sitios de experiencia autorizados</dt><dd>Su ubicación es información pública, así que se incluyen gratis. Si es tu primera vez, aprender la técnica en uno de estos sitios es lo más seguro.</dd><dt>La «Guía de minerales» también es gratis</dt><dd>Cómo distinguirlos, las variedades y las especies de dientes de tiburón se leen gratis.</dd></dl>
+  <p class="lead">También publicamos gratis, como notas de investigación, los registros de lugares donde no se encontró nada.</p>
+  <h2>Cómo se compran los packs</h2>
+  <dl class="faq"><dt>113 packs de pago</dt><dd>Se cubren 17 tipos de minerales y fósiles. Abre el pack de la zona que quieras desde la pestaña «Packs» o desde una marca con candado en el mapa.</dd><dt>Una compra lo abre todo</dt><dd>En los packs que agrupan varios yacimientos o ríos, una sola compra pone en el mapa todas las zonas que contienen. No se venden por zonas sueltas.</dd><dt>Compras conjuntas</dt><dd>Los lotes por región y el lote completo salen más baratos que comprar las piezas sueltas. Si compras packs sueltos y luego cambias, no se devuelve la diferencia, así que míralos antes.</dd><dt>Compra única, restaurable</dt><dd>No hay suscripción ni cargos posteriores. Tras cambiar de dispositivo o reinstalar, usa «Restaurar compras» en «Ajustes» (inicia sesión con el mismo Apple ID de la compra).</dd></dl>
+  <p class="lead">El precio válido es el que muestra la App Store. Los packs gratuitos y la guía funcionan sin comprar nada.</p>
+  <h2>Registrar en «Mi lista»</h2>
+  <dl class="faq"><dt>★ = la marca «Me interesa»</dt><dd>Marca un pack con ★ en su ficha y se reunirá en «Mi lista», junto con el total si los compraras sueltos y el lote que los incluye.</dd><dt>«Quiero ir», «Visitado», «¡Lo encontré!»</dt><dd>Puedes registrarlo en cada punto de un pack que hayas desbloqueado.</dd><dt>Los registros se quedan en el dispositivo</dt><dd>Ni tus registros ni tu ubicación se envían a ninguna parte. El desarrollador no puede verlos.</dd></dl>
+  <p class="lead">Si sale color sobre el terreno, envíanos el ID del punto y una foto desde el botón de informe del detalle del punto. Será material para la próxima versión.</p>
+  <h2>Prepararse con la «Guía de minerales»</h2>
+  <dl class="faq"><dt>Aspecto, cómo distinguirlos y confusiones frecuentes</dt><dd>Para cada mineral, las pruebas que puedes hacer sobre el terreno y con qué se confunde más a menudo.</dd><dt>Variedades y especies de dientes de tiburón</dt><dd>También puedes consultar las variantes de color del ágata y el granate, y las especies de dientes de tiburón de las playas japonesas.</dd><dt>Abrirla directamente desde un pack</dt><dd>Desde «Qué se puede encontrar aquí», en la ficha de un pack, puedes saltar a esa piedra en la guía.</dd></dl>
+  <p class="lead">Un mismo nombre puede designar especies y épocas distintas según el yacimiento. Leerlo una vez antes de salir cambia qué piedras recoges allí.</p>
+  <h2>Léalo antes de ir</h2>
+  <dl class="faq"><dt>Los sitios con «posible infracción» no se ocultan</dt><dd>Las zonas de monumento natural y los lugares que exigen permiso se mantienen, con las condiciones escritas. Solo se eliminan los sitios donde físicamente no se puede estar.</dd><dt>Antes de desbloquear: «Léalo antes de ir (normativa y riesgos)»</dt><dd>Al desbloquear un pack de pago siempre se pasa por una pantalla con la normativa local y los riesgos.</dd><dt>Abrir «Las 3 reglas y aviso legal»</dt><dd>Disfruta solo donde esté permitido entrar; déjalo en condiciones para la próxima vez; no subestimes la naturaleza. Se leen desde «Ajustes».</dd></dl>
+  <p class="lead">Los puntos candidatos son solo candidatos. Quién gestiona el acceso y la recogida cambia de un lugar a otro, así que confírmalo por tu cuenta antes de salir.</p>
+  <h2>Uso sin cobertura</h2>
+  <dl class="faq"><dt>Los puntos aparecen aunque no haya cobertura</dt><dd>Los puntos candidatos, sus fundamentos y tus registros funcionan con datos guardados en el dispositivo. Solo el fondo del mapa necesita conexión.</dd><dt>Carga el mapa antes de salir</dt><dd>En la montaña suele faltar cobertura, así que conviene mostrar una vez la zona de destino para que se cargue el fondo.</dd><dt>Llévatelos con «Exportar GPX (para apps GPS)»</dt><dd>Desde la ficha de un pack puedes llevarte los puntos a una app GPS de montaña.</dd></dl>
+  <p class="lead">Del fondo del mapa solo queda en el dispositivo la zona que ya has mostrado.</p>
+  <div class="langs">
+    <div class="label">Idioma</div>
+    <a href="../ja/howto.html" class="">日本語</a><a href="../en/howto.html" class="">English</a><a href="../zh-Hans/howto.html" class="">简体中文</a><a href="../zh-Hant/howto.html" class="">繁體中文</a><a href="../ko/howto.html" class="">한국어</a><a href="../es/howto.html" class="on">Español</a><a href="../fr/howto.html" class="">Français</a><a href="../de/howto.html" class="">Deutsch</a><a href="../it/howto.html" class="">Italiano</a><a href="../pt-BR/howto.html" class="">Português</a>
+  </div>
+  <footer class="site">
+    Esta app es un mapa de zonas candidatas para la recolección. No garantiza ningún hallazgo.<br>Última actualización: 2026-09-20 ・
+    <a href="https://note.com/kinpatusan">note</a> ・
+    <a href="../support.html">Soporte</a> ・ <a href="../privacy.html">Privacidad</a>
+  </footer>
+</main>
+</body>
+</html>

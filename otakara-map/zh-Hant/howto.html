@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>使用方法 | 日本尋寶地圖</title>
+<meta name="description" content="砂金、礦物、化石的採集候選地">
+<link rel="alternate" hreflang="x-default" href="https://kinpatusan.github.io/otakara-map/howto.html">
+<link rel="alternate" hreflang="ja" href="https://kinpatusan.github.io/otakara-map/ja/howto.html">
+<link rel="alternate" hreflang="en" href="https://kinpatusan.github.io/otakara-map/en/howto.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://kinpatusan.github.io/otakara-map/zh-Hans/howto.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://kinpatusan.github.io/otakara-map/zh-Hant/howto.html">
+<link rel="alternate" hreflang="ko" href="https://kinpatusan.github.io/otakara-map/ko/howto.html">
+<link rel="alternate" hreflang="es" href="https://kinpatusan.github.io/otakara-map/es/howto.html">
+<link rel="alternate" hreflang="fr" href="https://kinpatusan.github.io/otakara-map/fr/howto.html">
+<link rel="alternate" hreflang="de" href="https://kinpatusan.github.io/otakara-map/de/howto.html">
+<link rel="alternate" hreflang="it" href="https://kinpatusan.github.io/otakara-map/it/howto.html">
+<link rel="alternate" hreflang="pt-BR" href="https://kinpatusan.github.io/otakara-map/pt-BR/howto.html">
+<style>
+:root{
+  --gold:#c8a34a; --gold-soft:#e6d3a3;
+  --ink:#1b1b1f; --sub:#6b6b73; --line:#e6e6ea;
+  --bg:#fbfaf7; --card:#fff; --accent:#7c6bd6;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --ink:#ececf1; --sub:#a0a0a8; --line:#33333a;
+         --bg:#141416; --card:#1d1d21; --gold:#d9b968; --gold-soft:#e6d3a3; }
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",
+    "Segoe UI",system-ui,sans-serif;
+  line-height:1.85; -webkit-text-size-adjust:100%;
+}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px 72px}
+header.site{
+  background:linear-gradient(160deg,#2b2620 0%,#3d3527 55%,#241f1a 100%);
+  color:#fff; padding:34px 0 30px; margin-bottom:34px;
+}
+header.site .wrap{padding-bottom:0}
+.brand{display:flex;align-items:center;gap:14px}
+.brand .mark{
+  width:52px;height:52px;border-radius:13px;flex:none;display:block;
+  box-shadow:0 3px 12px rgba(0,0,0,.4);
+}
+.brand h1{font-size:1.28rem;margin:0;letter-spacing:.01em}
+.brand p{margin:2px 0 0;color:var(--gold-soft);font-size:.85rem}
+nav.site{margin-top:22px;display:flex;gap:8px;flex-wrap:wrap}
+nav.site a{
+  color:#fff;text-decoration:none;font-size:.86rem;
+  padding:7px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.28);
+}
+nav.site a.on{background:var(--gold);border-color:var(--gold);color:#241f1a;font-weight:700}
+h2{
+  font-size:1.06rem;margin:2.4rem 0 .8rem;padding-left:.65rem;
+  border-left:4px solid var(--gold);line-height:1.5;
+}
+p{margin:.7rem 0}
+.lead{color:var(--sub);font-size:.97rem}
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:14px;
+  padding:4px 20px;margin:1rem 0;
+}
+ul{padding-left:1.2rem;margin:.6rem 0}
+li{margin:.35rem 0}
+a{color:#8a6fd8}
+.faq dt{font-weight:700;margin-top:1.3rem}
+.faq dd{margin:.3rem 0 0;color:var(--sub)}
+.mail{
+  display:inline-block;margin:.3rem 0 .6rem;padding:11px 18px;border-radius:10px;
+  background:var(--gold);color:#241f1a;font-weight:700;text-decoration:none;
+}
+.langs{margin-top:2.6rem;padding-top:1.2rem;border-top:1px solid var(--line)}
+.langs .label{color:var(--sub);font-size:.8rem;margin-bottom:.5rem}
+.langs a{
+  display:inline-block;margin:0 .45rem .5rem 0;padding:5px 12px;
+  border:1px solid var(--line);border-radius:999px;font-size:.84rem;
+  text-decoration:none;color:var(--ink);background:var(--card);
+}
+.langs a.on{border-color:var(--gold);color:var(--gold);font-weight:700}
+footer.site{color:var(--sub);font-size:.8rem;margin-top:2.4rem;
+  padding-top:1.2rem;border-top:1px solid var(--line)}
+.hub{max-width:520px;margin:12vh auto;text-align:center;padding:0 20px}
+.hub .langs{border:0}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <div class="brand">
+      <img class="mark" src="../icon.png" alt="" width="52" height="52">
+      <div>
+        <h1>日本尋寶地圖</h1>
+        <p>砂金、礦物、化石的採集候選地</p>
+      </div>
+    </div>
+    <nav class="site"><a href="./howto.html" class="on">使用方法</a><a href="./support.html" class="">支援</a><a href="./privacy.html" class="">隱私權</a></nav>
+  </div>
+</header>
+<main class="wrap">
+  <p class="lead">彙整了地圖的讀法、篩選、套裝的購買方式，以及無訊號時的用法。</p>
+  <h2>四個標籤頁</h2>
+  <dl class="faq"><dt>「地圖」標籤頁</dt><dd>在地圖上查看候選地點。左上角的「圖例」彙整了顏色、形狀、大小與線條的含義。</dd><dt>「套裝」標籤頁</dt><dd>從列表中尋找收錄的區域。購買也在這裡。</dd><dt>「我的」標籤頁</dt><dd>標記★的套裝與每個地點的記錄會彙集在這裡。</dd><dt>「設定」標籤頁</dt><dd>這裡有本使用方法、規則與免責聲明、恢復購買、語言與戶外模式。</dd></dl>
+  <p class="lead">本頁可隨時從「設定」開啟。</p>
+  <h2>地圖的讀法</h2>
+  <dl class="faq"><dt>顏色＝礦物</dt><dd>用顏色表示這裡是哪種石頭的候選地。</dd><dt>大小＝期待度</dt><dd>標記越大，石頭越容易聚集（期待值：高／中／低）。這並不保證一定能採到。</dd><dt>形狀＝地點類型</dt><dd>●砂礫面、◎轉石面、■岩石出露面是實際採集的面。▽是「入口標記」，並非採集地點本身。</dd><dt>線＝尋找區間</dt><dd>實線＝已由資料確認為河灘、海灘或露頭的區間。虛線＝候選區間（請在現場確認後再尋找）。</dd></dl>
+  <p class="lead">同樣的內容也放在地圖左上角的「圖例」裡。在現場迷惑時，那裡更快。</p>
+  <h2>按點找，還是按帶找</h2>
+  <dl class="faq"><dt>砂金、砂鉑是「點」</dt><dd>比重重得不在一個量級，水會把它們分選到彎道內側、岩石裂縫這樣的一個點上。所以站在那個點才有意義。</dd><dt>其他礦物是「帶」</dt><dd>與周圍石頭的比重差不多，不會聚集在一個點。用線標示的區間裡到處都有可能。</dd><dt>帶的粗細與點的大小含義相同</dt><dd>帶越粗，期待值越高，其上的標記也越大。</dd></dl>
+  <p class="lead">決定因素不是河流還是海岸，而是該礦物是否比周圍的石頭重。</p>
+  <h2>篩選與搜尋</h2>
+  <dl class="faq"><dt>按礦物篩選</dt><dd>用地圖下方的橫欄切換礦物與體驗設施的顯示。先用「全部隱藏」清空，再只恢復想看的，會更快。</dd><dt>按「可達性」篩選</dt><dd>共有「輕鬆到達」「需步行一段」「有難點」「不明」四種。「不明」是道路資料未涵蓋的地點，並不表示去不了。</dd><dt>切換季節</dt><dd>海岸的漂砂方向會隨季節反轉，因此濃淡也隨季節變化。預設是今天所處的季節，按「回到當前」即可返回。</dd><dt>按地名搜尋</dt><dd>在地圖上的搜尋欄輸入地名、套裝名或河流名。未收錄的地方也可以移動地圖查看。</dd></dl>
+  <p class="lead">要一次恢復所有篩選，請使用「設定」中的「恢復顯示地圖所有圖層」。</p>
+  <h2>可以免費使用的內容</h2>
+  <dl class="faq"><dt>免費開放的套裝 17個</dt><dd>候選地點、依據、記錄都與付費套裝功能相同。帶（線）的顯示也可以在這裡體驗。</dd><dt>體驗設施與官方認可地點 27處</dt><dd>地點屬於公開資訊，因此免費收錄。初次嘗試的人，先在設施裡學會採集方法最穩妥。</dd><dt>「礦物圖鑑」也免費</dt><dd>鑑別方法、變種、鯊魚牙的種類，全部可以免費閱讀。</dd></dl>
+  <p class="lead">沒有找到東西的地點記錄，也作為研究筆記免費公開。</p>
+  <h2>套裝的購買方式</h2>
+  <dl class="faq"><dt>付費套裝 113個</dt><dd>收錄的礦物與化石共17種。可從「套裝」標籤頁或地圖上帶鎖的標記開啟想要的區域套裝。</dd><dt>一次購買全部解鎖</dt><dd>彙集多個產地或河流的套裝，只需購買一次，其中的全部區域都會顯示在地圖上。不按單一區域出售。</dd><dt>打包購買</dt><dd>按地方劃分與全部收錄的打包購買，比逐件購買更便宜。先買單件再改買打包不退差價，請先查看。</dd><dt>一次性買斷，可恢復</dt><dd>沒有訂閱或後續追加費用。更換機型或重新安裝後，可用「設定」中的「恢復購買」找回（請使用購買時相同的Apple ID登入）。</dd></dl>
+  <p class="lead">價格以商店顯示為準。免費套裝與圖鑑不購買也能照常使用。</p>
+  <h2>在「我的」裡做記錄</h2>
+  <dl class="faq"><dt>★＝「關注」的標記</dt><dd>在套裝詳情頁標記★後，會彙集到「我的」。還會顯示單件湊齊時的合計，以及包含它們的打包商品。</dd><dt>「想去」「去過」「找到了！」</dt><dd>可以對已解鎖套裝中的每個地點做記錄。</dd><dt>記錄只保存在裝置中</dt><dd>記錄與目前位置都不會傳送到外部。開發者無法查看。</dd></dl>
+  <p class="lead">如果在現場淘出了顏色，請透過地點詳情的回報按鈕傳送地點ID與照片。這會成為下一版的素材。</p>
+  <h2>用「礦物圖鑑」預習</h2>
+  <dl class="faq"><dt>外觀、鑑別方法、容易混淆的東西</dt><dd>按礦物分別列出可在現場進行的鑑別方法，以及常被誤認的東西。</dd><dt>變種與鯊魚牙的種類</dt><dd>瑪瑙與石榴石的不同顏色變種，以及在日本海灘能撿到的鯊魚牙種類，也都能查到。</dd><dt>直接從套裝開啟</dt><dd>可從套裝詳情的「這一帶能採到什麼」跳轉到該石頭的圖鑑。</dd></dl>
+  <p class="lead">名字相同，產地不同，物種和年代也不同。出發前先讀一遍，現場撿的石頭就會不一樣。</p>
+  <h2>出發前必讀</h2>
+  <dl class="faq"><dt>「可能違規」的地點也不隱藏</dt><dd>天然紀念物區域與需要許可的地方也不刪除，而是收錄並寫明條件。從地圖上刪除的只有「根本無法站立的地方」。</dd><dt>解鎖前的「出發前必讀（法規與危險）」</dt><dd>解鎖付費套裝時，必定會經過閱讀當地法規與危險的畫面。</dd><dt>開啟「尋寶三條規則與免責聲明」</dt><dd>只在允許進入的地方尋寶、保持下次還能玩的狀態、不要小看自然。可從「設定」閱讀。</dd></dl>
+  <p class="lead">候選地點終究只是候選。能否進入與採集因地點而異、管理者也不同，請在出發前自行確認。</p>
+  <h2>無訊號時的用法</h2>
+  <dl class="faq"><dt>無訊號也能顯示地點</dt><dd>候選地點、依據與記錄都靠裝置內的資料運行。需要連網的只有地圖背景。</dd><dt>出發前先開啟地圖</dt><dd>山區常常沒有訊號，出發前先顯示一次目的區域、把背景載入好比較安心。</dd><dt>用「匯出GPX（配合GPS應用）」帶走</dt><dd>可從套裝詳情把地點匯出到登山GPS應用。</dd></dl>
+  <p class="lead">地圖背景只有曾經顯示過的範圍會留在裝置中。</p>
+  <div class="langs">
+    <div class="label">語言</div>
+    <a href="../ja/howto.html" class="">日本語</a><a href="../en/howto.html" class="">English</a><a href="../zh-Hans/howto.html" class="">简体中文</a><a href="../zh-Hant/howto.html" class="on">繁體中文</a><a href="../ko/howto.html" class="">한국어</a><a href="../es/howto.html" class="">Español</a><a href="../fr/howto.html" class="">Français</a><a href="../de/howto.html" class="">Deutsch</a><a href="../it/howto.html" class="">Italiano</a><a href="../pt-BR/howto.html" class="">Português</a>
+  </div>
+  <footer class="site">
+    本 App 是採集候選地的地圖，並不保證一定能找到。<br>最後更新：2026年9月20日 ・
+    <a href="https://note.com/kinpatusan">note</a> ・
+    <a href="../support.html">支援</a> ・ <a href="../privacy.html">隱私權</a>
+  </footer>
+</main>
+</body>
+</html>

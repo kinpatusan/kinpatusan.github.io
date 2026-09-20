@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anleitung | Schatzkarte Japan</title>
+<meta name="description" content="Kandidatenorte zum Sammeln von Waschgold, Mineralien und Fossilien">
+<link rel="alternate" hreflang="x-default" href="https://kinpatusan.github.io/otakara-map/howto.html">
+<link rel="alternate" hreflang="ja" href="https://kinpatusan.github.io/otakara-map/ja/howto.html">
+<link rel="alternate" hreflang="en" href="https://kinpatusan.github.io/otakara-map/en/howto.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://kinpatusan.github.io/otakara-map/zh-Hans/howto.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://kinpatusan.github.io/otakara-map/zh-Hant/howto.html">
+<link rel="alternate" hreflang="ko" href="https://kinpatusan.github.io/otakara-map/ko/howto.html">
+<link rel="alternate" hreflang="es" href="https://kinpatusan.github.io/otakara-map/es/howto.html">
+<link rel="alternate" hreflang="fr" href="https://kinpatusan.github.io/otakara-map/fr/howto.html">
+<link rel="alternate" hreflang="de" href="https://kinpatusan.github.io/otakara-map/de/howto.html">
+<link rel="alternate" hreflang="it" href="https://kinpatusan.github.io/otakara-map/it/howto.html">
+<link rel="alternate" hreflang="pt-BR" href="https://kinpatusan.github.io/otakara-map/pt-BR/howto.html">
+<style>
+:root{
+  --gold:#c8a34a; --gold-soft:#e6d3a3;
+  --ink:#1b1b1f; --sub:#6b6b73; --line:#e6e6ea;
+  --bg:#fbfaf7; --card:#fff; --accent:#7c6bd6;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --ink:#ececf1; --sub:#a0a0a8; --line:#33333a;
+         --bg:#141416; --card:#1d1d21; --gold:#d9b968; --gold-soft:#e6d3a3; }
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",
+    "Segoe UI",system-ui,sans-serif;
+  line-height:1.85; -webkit-text-size-adjust:100%;
+}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px 72px}
+header.site{
+  background:linear-gradient(160deg,#2b2620 0%,#3d3527 55%,#241f1a 100%);
+  color:#fff; padding:34px 0 30px; margin-bottom:34px;
+}
+header.site .wrap{padding-bottom:0}
+.brand{display:flex;align-items:center;gap:14px}
+.brand .mark{
+  width:52px;height:52px;border-radius:13px;flex:none;display:block;
+  box-shadow:0 3px 12px rgba(0,0,0,.4);
+}
+.brand h1{font-size:1.28rem;margin:0;letter-spacing:.01em}
+.brand p{margin:2px 0 0;color:var(--gold-soft);font-size:.85rem}
+nav.site{margin-top:22px;display:flex;gap:8px;flex-wrap:wrap}
+nav.site a{
+  color:#fff;text-decoration:none;font-size:.86rem;
+  padding:7px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.28);
+}
+nav.site a.on{background:var(--gold);border-color:var(--gold);color:#241f1a;font-weight:700}
+h2{
+  font-size:1.06rem;margin:2.4rem 0 .8rem;padding-left:.65rem;
+  border-left:4px solid var(--gold);line-height:1.5;
+}
+p{margin:.7rem 0}
+.lead{color:var(--sub);font-size:.97rem}
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:14px;
+  padding:4px 20px;margin:1rem 0;
+}
+ul{padding-left:1.2rem;margin:.6rem 0}
+li{margin:.35rem 0}
+a{color:#8a6fd8}
+.faq dt{font-weight:700;margin-top:1.3rem}
+.faq dd{margin:.3rem 0 0;color:var(--sub)}
+.mail{
+  display:inline-block;margin:.3rem 0 .6rem;padding:11px 18px;border-radius:10px;
+  background:var(--gold);color:#241f1a;font-weight:700;text-decoration:none;
+}
+.langs{margin-top:2.6rem;padding-top:1.2rem;border-top:1px solid var(--line)}
+.langs .label{color:var(--sub);font-size:.8rem;margin-bottom:.5rem}
+.langs a{
+  display:inline-block;margin:0 .45rem .5rem 0;padding:5px 12px;
+  border:1px solid var(--line);border-radius:999px;font-size:.84rem;
+  text-decoration:none;color:var(--ink);background:var(--card);
+}
+.langs a.on{border-color:var(--gold);color:var(--gold);font-weight:700}
+footer.site{color:var(--sub);font-size:.8rem;margin-top:2.4rem;
+  padding-top:1.2rem;border-top:1px solid var(--line)}
+.hub{max-width:520px;margin:12vh auto;text-align:center;padding:0 20px}
+.hub .langs{border:0}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <div class="brand">
+      <img class="mark" src="../icon.png" alt="" width="52" height="52">
+      <div>
+        <h1>Schatzkarte Japan</h1>
+        <p>Kandidatenorte zum Sammeln von Waschgold, Mineralien und Fossilien</p>
+      </div>
+    </div>
+    <nav class="site"><a href="./howto.html" class="on">Anleitung</a><a href="./support.html" class="">Support</a><a href="./privacy.html" class="">Datenschutz</a></nav>
+  </div>
+</header>
+<main class="wrap">
+  <p class="lead">Wie die Karte zu lesen ist, wie gefiltert wird, wie Pakete verkauft werden und wie die App offline funktioniert.</p>
+  <h2>Die vier Tabs</h2>
+  <dl class="faq"><dt>Tab „Karte“</dt><dd>Zeigt die Fundort-Kandidaten auf der Karte. Oben links erklärt „Legende“, was Farben, Formen, Größen und Linien bedeuten.</dd><dt>Tab „Pakete“</dt><dd>Hier finden Sie die enthaltenen Gebiete als Liste – und kaufen sie auch.</dd><dt>Tab „Meine Liste“</dt><dd>Hier sammeln sich die mit ★ markierten Pakete und Ihre Notizen zu jedem Fundort.</dd><dt>Tab „Einstellungen“</dt><dd>Enthält diese Anleitung, Regeln und Haftungsausschluss, das Wiederherstellen von Käufen, die Sprache und den Outdoor-Modus.</dd></dl>
+  <p class="lead">Diese Seite lässt sich jederzeit über „Einstellungen“ öffnen.</p>
+  <h2>Die Karte lesen</h2>
+  <dl class="faq"><dt>Farbe = Mineral</dt><dd>Die Farbe zeigt, für welchen Stein der Ort ein Kandidat ist.</dd><dt>Größe = Erwartung</dt><dd>Je größer das Zeichen, desto eher sammeln sich dort Steine (Aussicht: hoch / mittel / gering). Ein Fund ist damit nicht garantiert.</dd><dt>Form = Art des Ortes</dt><dd>● Kiesfläche, ◎ Fläche mit Lesesteinen und ■ anstehender Fels sind Flächen, auf denen gesammelt wird. ▽ ist ein „Zugangs-Wegpunkt“, nicht der Sammelplatz selbst.</dd><dt>Linie = Suchabschnitt</dt><dd>Durchgezogene Linie = Abschnitt, der laut Daten als Flussbett, Strand oder Aufschluss bestätigt ist. Gestrichelt = Kandidatenabschnitt (vor Ort prüfen, bevor Sie suchen).</dd></dl>
+  <p class="lead">Dasselbe steht in der „Legende“ oben links auf der Karte – im Gelände der kürzere Weg.</p>
+  <h2>Punkt oder Abschnitt</h2>
+  <dl class="faq"><dt>Seifengold und -platin: ein Punkt</dt><dd>Ihre Dichte liegt in einer anderen Größenordnung, daher sortiert das Wasser sie an einzelnen Stellen aus: an der Innenseite einer Flussbiegung, in einer Felsspalte. Deshalb lohnt es sich, genau dort zu stehen.</dd><dt>Andere Minerale: ein Abschnitt</dt><dd>Ihre Dichte ähnelt der umgebenden Steine, sie sammeln sich also nicht an einer Stelle. Überall im als Linie gezeichneten Abschnitt ist etwas möglich.</dd><dt>Linienstärke bedeutet dasselbe wie Markengröße</dt><dd>Je dicker die Linie, desto höher die Aussicht – und desto größer die Zeichen darauf.</dd></dl>
+  <p class="lead">Entscheidend ist nicht Fluss oder Küste, sondern ob das Mineral schwerer ist als die Steine ringsum.</p>
+  <h2>Filtern und Suchen</h2>
+  <dl class="faq"><dt>Nach Mineral filtern</dt><dd>Die Leiste am unteren Kartenrand schaltet Minerale und Erlebnis-Standorte um. Am schnellsten geht es, einmal „Alle ausblenden“ zu tippen und dann nur das zurückzuholen, was Sie sehen wollen.</dd><dt>Nach „Zugang“ filtern</dt><dd>Es gibt vier: „Leicht erreichbar“, „Kurzer Fußweg“, „Schwieriges Gelände“ und „Unbekannt“. „Unbekannt“ heißt, dass keine Straßendaten bis zum Ort reichen – nicht, dass man nicht hinkommt.</dd><dt>Jahreszeit wechseln</dt><dd>An der Küste kehrt sich der Küstenlängstransport mit der Jahreszeit um, also ändert sich auch die Abstufung. Voreingestellt ist die heutige Jahreszeit; „Jetzt“ führt dorthin zurück.</dd><dt>Nach Ortsnamen suchen</dt><dd>Geben Sie im Suchfeld der Karte einen Ortsnamen, Paketnamen oder Flussnamen ein. Sie können die Karte auch zu Orten bewegen, die nicht enthalten sind.</dd></dl>
+  <p class="lead">Um alle Filter auf einmal zurückzusetzen, nutzen Sie „Alle Kartenebenen wieder anzeigen“ in den „Einstellungen“.</p>
+  <h2>Kostenlos nutzbar</h2>
+  <dl class="faq"><dt>17 kostenlos freigeschaltete Pakete</dt><dd>Kandidatenorte, Begründungen und Notizen funktionieren genau wie in einem gekauften Paket. Auch die Darstellung als Abschnitt (Linie) lässt sich hier ausprobieren.</dd><dt>27 Erlebnis-Standorte</dt><dd>Ihre Standorte sind öffentlich bekannt, daher sind sie kostenlos enthalten. Wer zum ersten Mal loszieht, lernt die Technik am besten zuerst dort.</dd><dt>Auch der „Mineralienführer“ ist kostenlos</dt><dd>Bestimmungshilfen, Varietäten und Haizahn-Arten sind alle kostenlos zu lesen.</dd></dl>
+  <p class="lead">Auch Aufzeichnungen über Orte, an denen nichts gefunden wurde, sind als Forschungsnotizen kostenlos veröffentlicht.</p>
+  <h2>Wie Pakete verkauft werden</h2>
+  <dl class="faq"><dt>113 kostenpflichtige Pakete</dt><dd>17 Arten von Mineralen und Fossilien sind enthalten. Öffnen Sie das Paket für das gewünschte Gebiet über den Tab „Pakete“ oder über ein Schloss-Zeichen auf der Karte.</dd><dt>Ein Kauf schaltet alles frei</dt><dd>Bei Paketen, die mehrere Fundorte oder Flüsse bündeln, erscheinen mit einem einzigen Kauf alle enthaltenen Gebiete auf der Karte. Einzelne Gebiete werden nicht verkauft.</dd><dt>Sammelkäufe</dt><dd>Regionsweite und Komplettpakete kosten weniger als die Einzelteile zusammen. Wer erst Einzelpakete kauft und dann wechselt, bekommt die Differenz nicht zurück – sehen Sie also zuerst dort nach.</dd><dt>Einmalkauf, wiederherstellbar</dt><dd>Es gibt kein Abo und keine weiteren Kosten. Nach einem Gerätewechsel oder einer Neuinstallation holen Sie alles über „Käufe wiederherstellen“ in den „Einstellungen“ zurück (mit derselben Apple-ID anmelden, mit der Sie gekauft haben).</dd></dl>
+  <p class="lead">Maßgeblich ist der im App Store angezeigte Preis. Die kostenlosen Pakete und der Führer funktionieren ohne Kauf.</p>
+  <h2>Notizen in „Meine Liste“</h2>
+  <dl class="faq"><dt>★ = die Markierung „Merken“</dt><dd>Markieren Sie ein Paket auf seiner Detailseite mit ★, sammelt es sich in „Meine Liste“ – samt Summe bei Einzelkauf und dem Sammelkauf, der es enthält.</dd><dt>„Will hin“, „Besucht“, „Gefunden!“</dt><dd>Das lässt sich für jeden Ort in einem freigeschalteten Paket festhalten.</dd><dt>Notizen bleiben auf dem Gerät</dt><dd>Weder Ihre Notizen noch Ihr Standort werden versendet. Der Entwickler kann sie nicht einsehen.</dd></dl>
+  <p class="lead">Wenn Sie vor Ort Farbe sehen, schicken Sie uns über die Meldeschaltfläche in den Ortsdetails die Orts-ID und ein Foto. Das fließt in die nächste Version ein.</p>
+  <h2>Mit dem „Mineralienführer“ vorbereiten</h2>
+  <dl class="faq"><dt>Aussehen, Bestimmung, häufige Verwechslungen</dt><dd>Für jedes Mineral die Tests, die sich im Gelände wirklich durchführen lassen, und die häufigsten Verwechslungen.</dd><dt>Varietäten und Haizahn-Arten</dt><dd>Auch die Farbvarianten von Achat und Granat sowie die an japanischen Stränden zu findenden Haizahn-Arten lassen sich nachschlagen.</dd><dt>Direkt aus einem Paket öffnen</dt><dd>Über „Was hier zu finden ist“ auf der Detailseite eines Pakets springen Sie direkt zum jeweiligen Stein im Führer.</dd></dl>
+  <p class="lead">Derselbe Name kann je nach Fundort verschiedene Arten und Epochen bezeichnen. Wer das vor dem Aufbruch einmal liest, hebt vor Ort andere Steine auf.</p>
+  <h2>Vor der Fahrt lesen</h2>
+  <dl class="faq"><dt>Orte mit „möglichem Verstoß“ werden nicht verschwiegen</dt><dd>Naturdenkmal-Zonen und genehmigungspflichtige Orte bleiben mit ausformulierten Bedingungen enthalten. Entfernt werden nur Orte, an denen man schlicht nicht stehen kann.</dd><dt>Vor dem Freischalten: „Vor der Fahrt lesen (Recht und Gefahren)“</dt><dd>Beim Freischalten eines kostenpflichtigen Pakets führt der Weg immer über eine Seite zu den örtlichen Vorschriften und Gefahren.</dd><dt>„Die 3 Regeln &amp; Haftungsausschluss“ öffnen</dt><dd>Nur dort unterwegs sein, wo man darf; alles so hinterlassen, dass es beim nächsten Mal noch geht; die Natur nicht unterschätzen. Nachzulesen unter „Einstellungen“.</dd></dl>
+  <p class="lead">Kandidatenorte sind nur Kandidaten. Wer Zutritt und Sammeln erlaubt, ist von Ort zu Ort verschieden – klären Sie das bitte vor der Abfahrt selbst.</p>
+  <h2>Nutzung ohne Empfang</h2>
+  <dl class="faq"><dt>Orte erscheinen auch ohne Empfang</dt><dd>Kandidatenorte, Begründungen und Notizen laufen mit Daten auf dem Gerät. Nur der Kartenhintergrund braucht eine Verbindung.</dd><dt>Karte vor dem Aufbruch laden</dt><dd>In den Bergen ist der Empfang oft schlecht; zeigen Sie das Zielgebiet daher einmal an, damit der Hintergrund geladen wird.</dd><dt>Mit „GPX exportieren (für GPS-Apps)“ mitnehmen</dt><dd>Von der Detailseite eines Pakets lassen sich die Orte in eine Wander-GPS-App übernehmen.</dd></dl>
+  <p class="lead">Vom Kartenhintergrund bleibt nur der Bereich auf dem Gerät, den Sie schon einmal angezeigt haben.</p>
+  <div class="langs">
+    <div class="label">Sprache</div>
+    <a href="../ja/howto.html" class="">日本語</a><a href="../en/howto.html" class="">English</a><a href="../zh-Hans/howto.html" class="">简体中文</a><a href="../zh-Hant/howto.html" class="">繁體中文</a><a href="../ko/howto.html" class="">한국어</a><a href="../es/howto.html" class="">Español</a><a href="../fr/howto.html" class="">Français</a><a href="../de/howto.html" class="on">Deutsch</a><a href="../it/howto.html" class="">Italiano</a><a href="../pt-BR/howto.html" class="">Português</a>
+  </div>
+  <footer class="site">
+    Diese App ist eine Karte mit Kandidatenorten zum Sammeln. Ein Fund wird nicht garantiert.<br>Zuletzt aktualisiert: 2026-09-20 ・
+    <a href="https://note.com/kinpatusan">note</a> ・
+    <a href="../support.html">Support</a> ・ <a href="../privacy.html">Datenschutz</a>
+  </footer>
+</main>
+</body>
+</html>
