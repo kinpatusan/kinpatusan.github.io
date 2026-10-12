@@ -1,0 +1,50 @@
+:root{
+  --ink:#24201c; --sub:#6a625a; --line:#e7e0d6;
+  --bg:#faf7f2; --card:#fffdf9; --accent:#b02a36; --accent-soft:#f3dcdc;
+  --head-a:#3a1f22; --head-b:#5a2a2f;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --ink:#efe9e2; --sub:#b3aaa0; --line:#3a3530;
+         --bg:#171513; --card:#211e1b; --accent:#e0707a; --accent-soft:#4a2a2d; }
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",
+    "Segoe UI",system-ui,sans-serif;
+  line-height:1.85; -webkit-text-size-adjust:100%;
+}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px 64px}
+header.site{
+  background:linear-gradient(160deg,var(--head-a) 0%,var(--head-b) 100%);
+  color:#fff; padding:30px 0 26px; margin-bottom:30px;
+}
+header.site .wrap{padding-bottom:0}
+.brand{display:flex;align-items:center;gap:14px}
+.brand .mark{width:52px;height:52px;border-radius:12px;flex:none;display:block}
+.brand h1{font-size:1.22rem;margin:0;line-height:1.4}
+.brand p{margin:2px 0 0;color:#f0d9d9;font-size:.85rem}
+nav.site{margin-top:20px;display:flex;gap:8px;flex-wrap:wrap}
+nav.site a{
+  color:#fff;text-decoration:none;font-size:.86rem;
+  padding:6px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.35);
+}
+nav.site a[aria-current]{background:#fff;color:var(--head-a);font-weight:700;border-color:#fff}
+h2{
+  font-size:1.05rem;margin:2.2rem 0 .7rem;padding-left:.65rem;
+  border-left:4px solid var(--accent);line-height:1.5;
+}
+p{margin:.7rem 0}
+.lead{font-size:1rem;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 16px}
+ul{padding-left:1.2rem;margin:.6rem 0}
+li{margin:.35rem 0}
+a{color:var(--accent)}
+.faq dt{font-weight:700;margin-top:1.2rem}
+.faq dd{margin:.3rem 0 0;color:var(--sub)}
+.mail{
+  display:inline-block;margin:.3rem 0 .6rem;padding:10px 16px;border-radius:10px;
+  background:var(--accent);color:#fff;font-weight:700;text-decoration:none;word-break:break-all;
+}
+footer{margin-top:2.6rem;padding-top:1rem;border-top:1px solid var(--line);color:var(--sub);font-size:.85rem}
+footer a{margin-right:.6rem}
